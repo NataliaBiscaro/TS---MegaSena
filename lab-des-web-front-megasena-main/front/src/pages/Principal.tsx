@@ -3,8 +3,10 @@ import { Cabecalho } from "../components/Cabecalho"
 import { Acumulado } from "../components/Acumulado";
 import { Local } from "../components/Local"
 import { Dezenas } from "../components/Dezenas";
+import { Proximo } from "../components/Proximo";
 import services from "../services";
 import { Props } from "../types";
+
 
 
 export default function Principal() {
@@ -31,16 +33,16 @@ export default function Principal() {
         {concurso.acumulado && <Acumulado />}
         <Local localSorteio={concurso.localSorteio} nomeMunicipioUFSorteio={concurso.nomeMunicipioUFSorteio} />
             <> 
-                <Dezenas listaDezenas={[]}>  </Dezenas>
-                <Dezenas listaDezenas={[]}>  </Dezenas>
-                <Dezenas listaDezenas={[]}>  </Dezenas>
-                <Dezenas listaDezenas={[]}>  </Dezenas>
-                <Dezenas listaDezenas={[]}>  </Dezenas>
-                <Dezenas listaDezenas={[]}>  </Dezenas>
+                <Dezenas listaDezenas={concurso.listaDezenas}>  </Dezenas>
+                <Dezenas listaDezenas={concurso.listaDezenas}>  </Dezenas>
+                <Dezenas listaDezenas={concurso.listaDezenas}>  </Dezenas>
+                <Dezenas listaDezenas={concurso.listaDezenas}>  </Dezenas>
+                <Dezenas listaDezenas={concurso.listaDezenas}>  </Dezenas>
+                <Dezenas listaDezenas={concurso.listaDezenas}>  </Dezenas>               
             </>
             
+        <Proximo dataProximoConcurso={concurso.dataProximoConcurso} ></Proximo>
         </>
-        
       
     
     );
