@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 
-export const DezenasSld = styled.div`
-    background: #209869;
-    border-radius: 35px;
-    width: 67px;
-    height: 67px;
-    top: 90px;
-    text-align: center;
-    font-size: 40px;
-    color: #FFFFFF;
-    margin-right: 12px;
-    margin-left: 12px;
-    display: inline-block
-`;
+export const SorteioSld = styled.div`
+    font-size:20px;
+    color: #fff;
+`
+
+export const DezenaSld = styled.div`
+        height: 40px;
+        width: 40px;
+        background: #209869;
+        border-radius: 50%;
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+        margin: 5px;
+`
 

@@ -6,4 +6,5 @@ export interface Props {
     dataApuracao: string,
     listaDezenas: string[],
     dataProximoConcurso: string
+    valorAcumuladoProximoConcurso: string;
 }
